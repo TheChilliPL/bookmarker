@@ -38,4 +38,4 @@ function shouldAutoRedirect() {
 
 setTimeout(() => {
     if(shouldAutoRedirect()) redirect();
-}, 0);
+}, 3000);
