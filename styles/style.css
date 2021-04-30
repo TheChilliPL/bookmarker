@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=block");
+* {
+  font-family: Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+button, input {
+  display: block;
+  width: 200px;
+  padding: 5px;
+  transition: width 200ms ease-in-out;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px auto;
+}
+button:hover, button:focus, input:hover, input:focus {
+  width: 300px;
+}
+
+button {
+  border: none;
+  background: #38d688;
+  cursor: pointer;
+}
+
+input[type=text], input[type=textbox] {
+  border: 1px #ccc solid;
+}
+input[type=text]:focus, input[type=textbox]:focus {
+  border-color: #38d688;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+label:first-child {
+  margin-top: 0;
+}
+
+aside {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.icon {
+  height: auto;
+}
+.icon.icon-big {
+  background: #38d688;
+  border: 10px transparent solid;
+  border-radius: 50%;
+  width: 75px;
+  overflow: visible;
+}
+
+header {
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+main {
+  position: relative;
+  width: 80%;
+  min-height: 50%;
+  border: 1px #ccc solid;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#output {
+  border: 1px black solid;
+  padding: 5px;
+  word-break: break-all;
+}
+#output:empty {
+  display: none;
+}
+
+hr {
+  background: #ccc;
+  height: 1px;
+  border: none;
+}
+
+a {
+  color: inherit;
+}
+
+.dropping * {
+  pointer-events: none;
+}
+
+.dropzone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 10px #ccc dashed;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  user-select: none;
+  visibility: hidden;
+}
+.dropping .dropzone {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

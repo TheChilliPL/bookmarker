@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmark</title>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+<header>
+    <svg class="icon icon-big" width="24" height="24" viewBox="0 0 24 24"><path d="M15 5A2 2 0 0 1 17 7V23L10 20 3 23V7C3 5.89 3.9 5 5 5H15M9 1H19A2 2 0 0 1 21 3V19L19 18.13V3H7A2 2 0 0 1 9 1Z"/></svg>
+    <h1>Bookmarker</h1>
+</header>
+<main>
+    <label for="url">URL</label>
+    <aside>Specifies the address to redirect to.</aside>
+    <input type="text" id="url">
+
+    <label for="icon">Icon</label>
+    <aside>Specifies the URL of the icon. Can be a link to an ICO file or to a normal image.</aside>
+    <input type="text" id="icon">
+
+    <label for="bg">Background</label>
+    <aside>Specifies the background color (in hex, without the hash symbol).<br>Empty means browser default.</aside>
+    <input type="text" id="bg">
+
+    <button id="generate">Generate</button>
+
+    <div id="output"></div>
+
+    <div class="dropzone" id="bookmark-drop">
+        <svg class="icon icon-big" width="24" height="24" viewBox="0 0 24 24"><path d="M12,3.77L11.25,4.61C11.25,4.61 9.97,6.06 8.68,7.94C7.39,9.82 6,12.07 6,14.23A6,6 0 0,0 12,20.23A6,6 0 0,0 18,14.23C18,12.07 16.61,9.82 15.32,7.94C14.03,6.06 12.75,4.61 12.75,4.61L12,3.77M12,6.9C12.44,7.42 12.84,7.85 13.68,9.07C14.89,10.83 16,13.07 16,14.23C16,16.45 14.22,18.23 12,18.23C9.78,18.23 8,16.45 8,14.23C8,13.07 9.11,10.83 10.32,9.07C11.16,7.85 11.56,7.42 12,6.9Z" /></svg>
+        <h1>Drop the bookmark here!</h1>
+        By dropping your existing bookmark here, you can edit it!
+    </div>
+    <aside>
+        <p>
+            The usage is very simple. You input the URL you want to be redirected to, URL of the icon you want the bookmark to have, and optionally the background color for the fraction of a second it takes to redirect.
+        </p>
+        <p>
+            After clicking the Generate button, you get a URL to use for the bookmark instead of the original one!
+        </p>
+        <p>
+            <b>PS.</b> You can drag&drop the bookmark back here to import the settings!
+        </p>
+        <hr>
+        <p>
+            This project is <a href="https://github.com/TheChilliPL/bookmarker">open-source on GitHub</a>! Contributions are welcome!
+        </p>
+    </aside>
+</main>
+</body>
+</html>

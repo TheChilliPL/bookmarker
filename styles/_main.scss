@@ -1,0 +1,29 @@
+main {
+  position: relative;
+  width: 80%;
+  min-height: 50%;
+  border: 1px $border solid;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#output {
+  border: 1px black solid;
+  padding: 5px;
+  word-break: break-all;
+
+  &:empty {
+    display: none;
+  }
+}
+
+hr {
+  background: $border;
+  height: 1px;
+  border: none;
+}
+
+a {
+  color: inherit;
+}

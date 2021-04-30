@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+button, input {
+  display: block;
+
+  width: 200px;
+
+  padding: 5px;
+
+  transition: width 200ms ease-in-out;
+
+  border-radius: 5px;
+  outline: none;
+
+  margin: 10px auto;
+
+  &:hover, &:focus {
+    width: 300px;
+  }
+}
+
+button {
+  border: none;
+  background: $theme-color;
+
+  cursor: pointer;
+}
+
+input {
+  &[type=text], &[type=textbox] {
+    border: 1px $border solid;
+
+    &:focus {
+      border-color: $theme-color;
+    }
+  }
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+aside {
+  font-size: .8rem;
+  color: $dimmed;
+}
