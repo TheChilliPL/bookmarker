@@ -20,6 +20,8 @@ function redirect() {
     let url = decode(query.get("url"));
     if(url)
         document.location.href = url;
+
+    return false;
 }
 
 function shouldAutoRedirect() {
@@ -36,6 +38,5 @@ function shouldAutoRedirect() {
     return false;
 }
 
-setTimeout(() => {
-    if(shouldAutoRedirect()) redirect();
-}, 3000);
+if(shouldAutoRedirect())
+    setTimeout(redirect, 3000);
