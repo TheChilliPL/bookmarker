@@ -15,5 +15,7 @@ faviconElement.href = decode(query.get("icon"));
 document.head.appendChild(faviconElement);
 
 setTimeout(() => {
-    document.location.href = decode(query.get("url"));
+    let url = decode(query.get("url"));
+    if(url)
+        document.location.href = url;
 }, 0);
