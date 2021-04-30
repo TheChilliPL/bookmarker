@@ -19,7 +19,7 @@ function redirect(e) {
 
     let url = decode(query.get("url"));
     if(url)
-        document.location.href = url;
+        window.location.href = url;
 
     if(e) e.preventDefault();
 
