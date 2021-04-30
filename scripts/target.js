@@ -42,3 +42,5 @@ function shouldAutoRedirect() {
 
 if(shouldAutoRedirect())
     setTimeout(redirect, 3000);
+
+document.querySelector("#redirect").addEventListener("click", redirect);
