@@ -14,12 +14,14 @@ faviconElement.rel = "icon";
 faviconElement.href = decode(query.get("icon"));
 document.head.appendChild(faviconElement);
 
-function redirect() {
+function redirect(e) {
     localStorage.setItem(window.location.href + " auto", 1);
 
     let url = decode(query.get("url"));
     if(url)
         document.location.href = url;
+
+    if(e) e.preventDefault();
 
     return false;
 }
